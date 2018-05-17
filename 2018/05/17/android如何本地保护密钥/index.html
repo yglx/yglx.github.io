@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Testing,Another Tag," />
+  <meta name="keywords" content="安全,android,签名," />
 
 
 
@@ -77,18 +77,18 @@
 
 
 
-<meta name="description" content="这个是测试的标签的适当">
-<meta name="keywords" content="Testing,Another Tag">
+<meta name="description" content="在这篇文章你能看到对安卓本地保存密钥的实践 前言在网络传输过程中，我们往往需要一个密钥对参数进行签名，用于验证来源可靠，所以我们在app打包过程中，就避免不了在app中保存此密钥。 保存密钥的方法直接在java代码中写最基本简单的就是直接在java代码把密钥串写在静态变量中，最简单，显然也是不太靠谱的，容易反编译后被发现，即使混淆后，这种静态变量也是容易被发现的。 写在cpp里写在cpp里，打包后">
+<meta name="keywords" content="安全,android,签名">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test_tag">
-<meta property="og:url" content="http://yoursite.com/2017/12/19/test-tag/index.html">
+<meta property="og:title" content="android如何本地保护密钥">
+<meta property="og:url" content="http://yoursite.com/2018/05/17/android如何本地保护密钥/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="这个是测试的标签的适当">
+<meta property="og:description" content="在这篇文章你能看到对安卓本地保存密钥的实践 前言在网络传输过程中，我们往往需要一个密钥对参数进行签名，用于验证来源可靠，所以我们在app打包过程中，就避免不了在app中保存此密钥。 保存密钥的方法直接在java代码中写最基本简单的就是直接在java代码把密钥串写在静态变量中，最简单，显然也是不太靠谱的，容易反编译后被发现，即使混淆后，这种静态变量也是容易被发现的。 写在cpp里写在cpp里，打包后">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-19T13:58:15.167Z">
+<meta property="og:updated_time" content="2018-05-17T14:14:51.202Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_tag">
-<meta name="twitter:description" content="这个是测试的标签的适当">
+<meta name="twitter:title" content="android如何本地保护密钥">
+<meta name="twitter:description" content="在这篇文章你能看到对安卓本地保存密钥的实践 前言在网络传输过程中，我们往往需要一个密钥对参数进行签名，用于验证来源可靠，所以我们在app打包过程中，就避免不了在app中保存此密钥。 保存密钥的方法直接在java代码中写最基本简单的就是直接在java代码把密钥串写在静态变量中，最简单，显然也是不太靠谱的，容易反编译后被发现，即使混淆后，这种静态变量也是容易被发现的。 写在cpp里写在cpp里，打包后">
 
 
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/19/test-tag/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/17/android如何本地保护密钥/"/>
 
 
 
 
 
-  <title>test_tag | 我的博客</title>
+  <title>android如何本地保护密钥 | 我的博客</title>
   
 
 
@@ -251,7 +251,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/19/test-tag/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/17/android如何本地保护密钥/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Michael">
@@ -268,7 +268,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test_tag</h1>
+          <h1 class="post-title" itemprop="name headline">android如何本地保护密钥</h1>
         
 
         <div class="post-meta">
@@ -280,8 +280,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-19T21:55:18+08:00">
-                2017-12-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-17T22:14:51+08:00">
+                2018-05-17
               </time>
             
 
@@ -318,7 +318,15 @@
       
 
       
-        <h2 id="这个是测试的标签的"><a href="#这个是测试的标签的" class="headerlink" title="这个是测试的标签的"></a>这个是测试的标签的</h2><h3 id="适当"><a href="#适当" class="headerlink" title="适当"></a>适当</h3>
+        <p>在这篇文章你能看到对安卓本地保存密钥的实践</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在网络传输过程中，我们往往需要一个密钥对参数进行签名，用于验证来源可靠，所以我们在app打包过程中，就避免不了在app中保存此密钥。</p>
+<h2 id="保存密钥的方法"><a href="#保存密钥的方法" class="headerlink" title="保存密钥的方法"></a>保存密钥的方法</h2><h3 id="直接在java代码中写"><a href="#直接在java代码中写" class="headerlink" title="直接在java代码中写"></a>直接在java代码中写</h3><p>最基本简单的就是直接在java代码把密钥串写在静态变量中，最简单，显然也是不太靠谱的，容易反编译后被发现，即使混淆后，这种静态变量也是容易被发现的。</p>
+<h3 id="写在cpp里"><a href="#写在cpp里" class="headerlink" title="写在cpp里"></a>写在cpp里</h3><p>写在cpp里，打包后，保存在so库中，这个方法，安全度增加了很多，编译后的c代码，反编译非常困难，看起来美美的<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Java_com_yglx_testjni_MainActivity_getKey(</div><div class="line">        JNIEnv *env,</div><div class="line">        jobject <span class="comment">/* this */</span>) &#123;</div><div class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> key = <span class="string">"asdkjflaksdjflksjadfasdfasdfasdfasdfsdfasdlfkjasldfjasdlf"</span>;</div><div class="line">    <span class="keyword">return</span> env-&gt;NewStringUTF(key.c_str());</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>看起来不错，但是又有问题了，当把apk解压后，lib里面可以看到生成的so文件，别人就可以拿到这个so文件，之后新建一个相同包名和类名的应用，这样就可以拿到你隐藏的密钥了，那能不能在被有心之人拿到so文件的情况下，仍旧不能获取到密钥呢，那就是接下来策略，执行代码前先校验app签名。</p>
+<h3 id="cpp里加入应用的签名校验"><a href="#cpp里加入应用的签名校验" class="headerlink" title="cpp里加入应用的签名校验"></a>cpp里加入应用的签名校验</h3><p>获取应用的签名，实际也是通过android中java的api进行获取的，我把部分代码贴出。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">extern</span> <span class="string">"C"</span></div><div class="line">JNIEXPORT jstring JNICALL</div><div class="line">Java_com_yglx_testjni_MainActivity_getSafeKey(JNIEnv *env, jobject instance,jobject contextObject) &#123;</div><div class="line">    jmethodID getPackageManagerId = (env)-&gt;GetMethodID(contextClass, <span class="string">"getPackageManager"</span>,<span class="string">"()Landroid/content/pm/PackageManager;"</span>);</div><div class="line">    jmethodID getPackageNameId = (env)-&gt;GetMethodID(contextClass, <span class="string">"getPackageName"</span>,<span class="string">"()Ljava/lang/String;"</span>);</div><div class="line">    jmethodID signToStringId = (env)-&gt;GetMethodID(signatureClass, <span class="string">"toCharsString"</span>,<span class="string">"()Ljava/lang/String;"</span>);</div><div class="line">    jmethodID getPackageInfoId = (env)-&gt;GetMethodID(packageNameClass, <span class="string">"getPackageInfo"</span>,<span class="string">"(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;"</span>);</div><div class="line">    jobject packageManagerObject =  (env)-&gt;CallObjectMethod(contextObject, getPackageManagerId);</div><div class="line">    jstring packNameString =  (jstring)(env)-&gt;CallObjectMethod(contextObject, getPackageNameId);</div><div class="line">    jobject packageInfoObject = (env)-&gt;CallObjectMethod(packageManagerObject, getPackageInfoId,packNameString, <span class="number">64</span>);</div><div class="line">    jfieldID signaturefieldID =(env)-&gt;GetFieldID(packageInfoClass,<span class="string">"signatures"</span>, <span class="string">"[Landroid/content/pm/Signature;"</span>);</div><div class="line">    jobjectArray signatureArray = (jobjectArray)(env)-&gt;GetObjectField(packageInfoObject, signaturefieldID);</div><div class="line">    jobject signatureObject =  (env)-&gt;GetObjectArrayElement(signatureArray,<span class="number">0</span>);</div><div class="line"></div><div class="line">    <span class="keyword">const</span> <span class="keyword">char</span>* signStrng =  (env)-&gt;GetStringUTFChars((jstring)(env)-&gt;CallObjectMethod(signatureObject, signToStringId),<span class="number">0</span>);</div><div class="line"></div><div class="line">    <span class="keyword">if</span>(<span class="built_in">strcmp</span>(signStrng,RELEASE_SIGN)==<span class="number">0</span>)<span class="comment">//签名一致  返回合法的 api key，否则返回错误</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span> (env)-&gt;NewStringUTF(AUTH_KEY);</div><div class="line">    &#125;<span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span> (env)-&gt;NewStringUTF(<span class="string">"error"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>到这里，使用cpp并且用校验应用签名的方法就能达到一个对密钥的比较好的保护。</p>
+<h2 id="附上实践中的代码链接"><a href="#附上实践中的代码链接" class="headerlink" title="附上实践中的代码链接"></a>附上实践中的代码链接</h2><p><a href="https://github.com/yglx/protectSecretKeyDemo" target="_blank" rel="external">github demo</a></p>
+
       
     </div>
     
@@ -335,9 +343,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Testing/" rel="tag"># Testing</a>
+            <a href="/tags/安全/" rel="tag"># 安全</a>
           
-            <a href="/tags/Another-Tag/" rel="tag"># Another Tag</a>
+            <a href="/tags/android/" rel="tag"># android</a>
+          
+            <a href="/tags/签名/" rel="tag"># 签名</a>
           
         </div>
       
@@ -350,8 +360,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/19/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/05/12/Retrofit源码解析/" rel="next" title="Retrofit源码解析">
+                <i class="fa fa-chevron-left"></i> Retrofit源码解析
               </a>
             
           </div>
@@ -359,10 +369,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/12/Retrofit源码解析/" rel="prev" title="Retrofit源码解析">
-                Retrofit源码解析 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -515,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#这个是测试的标签的"><span class="nav-number">1.</span> <span class="nav-text">这个是测试的标签的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#适当"><span class="nav-number">1.1.</span> <span class="nav-text">适当</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存密钥的方法"><span class="nav-number">2.</span> <span class="nav-text">保存密钥的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#直接在java代码中写"><span class="nav-number">2.1.</span> <span class="nav-text">直接在java代码中写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写在cpp里"><span class="nav-number">2.2.</span> <span class="nav-text">写在cpp里</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cpp里加入应用的签名校验"><span class="nav-number">2.3.</span> <span class="nav-text">cpp里加入应用的签名校验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附上实践中的代码链接"><span class="nav-number">3.</span> <span class="nav-text">附上实践中的代码链接</span></a></li></ol></div>
             
 
           </div>
