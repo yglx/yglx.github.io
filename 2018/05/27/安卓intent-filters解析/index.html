@@ -358,7 +358,7 @@
 <li>data的匹配，data可以设置的信息稍微多一点，首先在intent-filter设置URI的时候，URI中的几个配置项scheme，host，port，path是有相关性的，即在没有设置前者的情况下，设置了后者是无效的,所以系统只会拿intent中的数据和去除了无效项的intent-filter进行匹配。</li>
 <li>data的匹配中，MIME和URI匹配都是比较强的匹配的，即intent-filter的未指定与intent中的未指定才能匹配上，才能通过。然而这里又有特例，intent-filter指定了MIME类型，没有指定URI的时候，intent-filter又默认支持指定了URI为content：和file：的数据。</li>
 </ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在使用intent-filter的时候，主要还是抓住intent的内容小于等于intent-filter即可通过过滤，即能启动对应组件，虽然在测试过程中我们去尝试了一些边界值，但我认为很大程度上有一些是不够规范造成的。最后说一下，在一个组件中也是可以设置多个intent-filter的，只要满足一个intent-filter即可通过过滤，启动组件。<br><a href="https://github.com/yglx/testManifestDemo" target="_blank" rel="external">测试demo</a><br><a href="https://developer.android.com/guide/components/intents-filters" target="_blank" rel="external">参考https://developer.android.com/guide/components/intents-filters</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在使用intent-filter的时候，主要还是抓住intent的内容小于等于intent-filter即可通过过滤，即能启动对应组件，虽然在测试过程中我们去尝试了一些边界值，但我认为很大程度上有一些是不够规范造成的。最后说一下，在一个组件中也是可以设置多个intent-filter的，只要满足一个intent-filter即可通过过滤，启动组件。<br><a href="https://github.com/yglx/testManifestDemo" target="_blank" rel="noopener">测试demo</a><br><a href="https://developer.android.com/guide/components/intents-filters" target="_blank" rel="noopener">参考https://developer.android.com/guide/components/intents-filters</a></p>
 
       
     </div>
@@ -398,6 +398,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/24/“通过service分析安卓binder机制的进程间通信”/" rel="prev" title="通过service分析安卓binder机制的进程间通信">
+                通过service分析安卓binder机制的进程间通信 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -479,7 +483,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
